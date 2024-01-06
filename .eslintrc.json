@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["@papaya-app/eslint-config"]
+}

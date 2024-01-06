@@ -1,0 +1,21 @@
+{
+  "name": "@nuxt-template-admin/monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint --ext .ts,.vue .",
+    "format": "pnpm lint --fix"
+  },
+  "devDependencies": {
+    "@papaya-app/eslint-config": "^0.1.1",
+    "simple-git-hooks": "^2.9.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --cache ."
+    ]
+  }
+}
