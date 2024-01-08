@@ -5,7 +5,6 @@
   <a href='user-4'> <Button>user4</Button></a>
   <a href='home'> <Button>home</Button></a>
   {{ version }}
-  {{ website.name }}
   <Button @click='change'>
     changes
   </Button>
@@ -18,10 +17,8 @@ definePageMeta({
 })
 
 const version = useVersion()
-const website = useWebsiteStore()
 function change() {
   version.value = '1.2.1'
-  website.setName('ok')
 }
 
 </script>

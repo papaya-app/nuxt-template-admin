@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "@papaya-app/eslint-config": "^0.1.1",
-    "simple-git-hooks": "^2.9.0"
+    "simple-git-hooks": "^2.9.0",
+    "vitest": "^1.1.3"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
